@@ -20,6 +20,8 @@ public class FlutterCommandTest extends FlutterCodeInsightFixtureTestCase {
     assertTrue("No content roots found for module", roots.length > 0);
     VirtualFile home = roots[0];
 
+    // Use reflection because FlutterSdk's private constructor avoids the disk validation
+    // performed by forPath(), which fails for the test fixture's content root.
     Constructor<FlutterSdk> constructor =
       FlutterSdk.class.getDeclaredConstructor(VirtualFile.class, FlutterSdkVersion.class);
     constructor.setAccessible(true);
