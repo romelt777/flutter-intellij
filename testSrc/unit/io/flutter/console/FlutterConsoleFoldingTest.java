@@ -37,7 +37,7 @@ public class FlutterConsoleFoldingTest extends FlutterCodeInsightFixtureTestCase
       folding.getPlaceholderText(getProject(), List.of(line)));
   }
 
-    public void testFoldsLineThatStillHasNoColor() {
+  public void testFoldsLineThatStillHasNoColor() {
     assertTrue(folding.shouldFoldLine(getProject(), FLUTTER_PATH + " --no-color pub get"));
   }
 
@@ -76,4 +76,22 @@ public class FlutterConsoleFoldingTest extends FlutterCodeInsightFixtureTestCase
       "flutter run --device-id=windows lib\\main.dart",
       folding.getPlaceholderText(getProject(), List.of(line)));
   }
+  
+  public void testFoldsCommandWhenUnixPathContainsSpaces() {
+    final String path =
+      "/Users/me/My Projects/flutter/bin"
+        + FlutterConstants.INDEPENDENT_PATH_SEPARATOR
+        + FlutterSdkUtil.flutterScriptName();
+
+    assertTrue(folding.shouldFoldLine(getProject(), path + " pub get"));
+  }
+
+  public void testFoldsCommandWhenWindowsPathContainsSpaces() {
+    final String path =
+      "C:\\Users\\me\\My Projects\\flutter\\bin\\"
+        + FlutterSdkUtil.flutterScriptName();
+
+    assertTrue(folding.shouldFoldLine(getProject(), path + " pub get"));
+  }
+
 }

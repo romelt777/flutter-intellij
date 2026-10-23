@@ -43,7 +43,22 @@ public class FlutterConsoleFolding extends ConsoleFolding {
   @Override
   public boolean shouldFoldLine(@NotNull Project project, @NotNull String line) {
     final int index = indexOfMarker(line);
-    return index != -1 && line.indexOf(' ') > index;
+    if (index == -1) {
+      return false;
+    }
+
+    final String pathPrefix = line.substring(0, index);
+
+    // Allow spaces in absolute paths, but don't fold lines with unrelated
+    // text before the Flutter executable.
+    final boolean isAbsolutePath =
+      pathPrefix.startsWith("/")
+        || (pathPrefix.length() >= 3
+          && Character.isLetter(pathPrefix.charAt(0))
+          && pathPrefix.charAt(1) == ':'
+          && (pathPrefix.charAt(2) == '\\' || pathPrefix.charAt(2) == '/'));
+
+    return pathPrefix.indexOf(' ') == -1 || isAbsolutePath;
   }
 
   @Override
