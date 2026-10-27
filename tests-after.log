@@ -1,0 +1,892 @@
+﻿Commit: 2211e3af60e778af2adac29fbc2efb6996b0cc16
+Branch: 
+Started: 2026-10-26 21:04:07 -03:00
+
+> Configure project :
+flutterPluginVersion: SNAPSHOT
+androidStudioVersion: 2026.1.2.8
+dartPluginVersion: 509.0.0
+sinceBuild: 252
+javaVersion: 21
+group: io.flutter
+
+> Task :clean
+> Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :initializeIntellijPlatformPlugin
+> Task :compileKotlin
+
+> Task :patchPluginXml
+[org.jetbrains.intellij.platform] Patching plugin.xml: value of 'version[$VERSION]' tag will be set to 'SNAPSHOT'
+
+> Task :writeLicenseKey
+> Task :processResources
+
+> Task :compileKotlin
+w: API version 2.1 is deprecated and its support will be removed in a future version of Kotlin. Update the version to 2.2.
+
+> Task :compileJava
+gradlew.bat : C:\Users\Rom\Documents\assign1-opensource\flutter-intellij\src\io\flutter\project\Flutter
+ProjectStructureDetector.java:100: warning: [removal] projectOpened(Project) in ProjectManagerListener 
+has been deprecated and marked for removal
+At line:6 char:1
++ & .\gradlew.bat clean test --rerun-tasks --no-build-cache --no-config ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\Rom\Do...ked for removal:String) [], RemoteExcep 
+   tion
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+      public void projectOpened(@NotNull Project project) {
+                  ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+
+> Task :classes
+> Task :generateManifest
+> Task :jar
+
+> Task :compileTestKotlin
+w: API version 2.1 is deprecated and its support will be removed in a future version of Kotlin. Update the version to 2.2.
+
+> Task :processTestResources
+
+> Task :compileTestJava
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :testClasses
+> Task :instrumentTestCode
+> Task :koverFindJar
+> Task :instrumentCode
+> Task :instrumentedJar
+> Task :composedJar
+> Task :prepareTestSandbox
+> Task :prepareTest
+
+> Task :test
+CompileCommand: exclude org/jetbrains/kotlin/serialization/deserialization/TypeDeserializer.simpleType bool exclude = true
+CompileCommand: exclude org/jetbrains/kotlin/serialization/deserialization/TypeDeserializer.toAttributes bool exclude = true
+
+Gradle Test Executor 10 STANDARD_ERROR
+    Configuration file for j.u.l.LogManager does not exist: C:\Users\Rom\.gradle\caches\9.8.1\transforms\482de20d328f9947efe602ed108af7f0\transformed\android-studio-2026.1.2.8-quail2-rc1-windows\test-log.properties
+
+Gradle Test Executor 10 STANDARD_OUT
+    Test log file: file:///C:/Users/Rom/Documents/assign1-opensource/flutter-intellij/.intellijPlatform/sandbox/flutter-intellij/AI-AI-261.25134.95.2612.15653154/log-test/idea.log
+
+FlutterConsoleFoldingTest > testFoldsWindowsStyleCommandLine STANDARD_ERROR
+    [   2915]   WARN - #c.i.i.p.PluginManager - intellij.cidr.util.ui has accessibility problem which is currently ignored: it has no namespace specified and depends on module 'intellij.cidr.util' which is registered in 'com.intellij.cidr.base' plugin with internal visibility in unspecified namespace
+    [   2917]   WARN - #c.i.i.p.PluginManager - intellij.cidr.util.serializer has accessibility problem which is currently ignored: it has no namespace specified and depends on module 'intellij.cidr.util' which is registered in 'com.intellij.cidr.base' plugin with internal visibility in unspecified namespace
+    [   2917]   WARN - #c.i.i.p.PluginManager - intellij.cidr.lang.base has accessibility problem which is currently ignored: it has no namespace specified and depends on module 'intellij.cidr.core' which is registered in 'com.intellij.cidr.debugger' plugin with internal visibility in namespace 'jetbrains'
+    [   2918]   WARN - #c.i.i.p.PluginManager - intellij.cidr.lang.base has accessibility problem which is currently ignored: it has no namespace specified and depends on module 'intellij.cidr.util' which is registered in 'com.intellij.cidr.base' plugin with internal visibility in unspecified namespace
+    [   2918]   WARN - #c.i.i.p.PluginManager - intellij.cidr.projectModel has accessibility problem which is currently ignored: it has no namespace specified and depends on module 'intellij.cidr.core' which is registered in 'com.intellij.cidr.debugger' plugin with internal visibility in namespace 'jetbrains'
+    [   2919]   WARN - #c.i.i.p.PluginManager - intellij.cidr.projectModel has accessibility problem which is currently ignored: it has no namespace specified and depends on module 'intellij.cidr.util' which is registered in 'com.intellij.cidr.base' plugin with internal visibility in unspecified namespace
+    [   2919]   WARN - #c.i.i.p.PluginManager - intellij.cidr.projectModel has accessibility problem which is currently ignored: it has no namespace specified and depends on module 'intellij.cidr.util.serializer' which is registered in 'com.intellij.cidr.base' plugin with internal visibility in unspecified namespace
+    [   2919]   WARN - #c.i.i.p.PluginManager - intellij.cidr.workspaceModel has accessibility problem which is currently ignored: it has no namespace specified and depends on module 'intellij.cidr.core' which is registered in 'com.intellij.cidr.debugger' plugin with internal visibility in namespace 'jetbrains'
+    [   2920]   WARN - #c.i.i.p.PluginManager - intellij.cidr.workspaceModel has accessibility problem which is currently ignored: it has no namespace specified and depends on module 'intellij.cidr.util' which is registered in 'com.intellij.cidr.base' plugin with internal visibility in unspecified namespace
+    [   2920]   WARN - #c.i.i.p.PluginManager - intellij.cidr.execution has accessibility problem which is currently ignored: it has no namespace specified and depends on module 'intellij.cidr.core' which is registered in 'com.intellij.cidr.debugger' plugin with internal visibility in namespace 'jetbrains'
+    [   2920]   WARN - #c.i.i.p.PluginManager - intellij.cidr.execution has accessibility problem which is currently ignored: it has no namespace specified and depends on module 'intellij.cidr.util' which is registered in 'com.intellij.cidr.base' plugin with internal visibility in unspecified namespace
+    [   2920]   WARN - #c.i.i.p.PluginManager - intellij.cidr.execution has accessibility problem which is currently ignored: it has no namespace specified and depends on module 'intellij.cidr.util.ui' which is registered in 'com.intellij.cidr.base' plugin with internal visibility in unspecified namespace
+    [   2921]   WARN - #c.i.i.p.PluginManager - intellij.c.core has accessibility problem which is currently ignored: it is from namespace 'jetbrains' and depends on module 'intellij.cidr.util' which is registered in 'com.intellij.cidr.base' plugin with internal visibility in unspecified namespace
+    [   2921]   WARN - #c.i.i.p.PluginManager - intellij.c.core has accessibility problem which is currently ignored: it is from namespace 'jetbrains' and depends on module 'intellij.cidr.util.serializer' which is registered in 'com.intellij.cidr.base' plugin with internal visibility in unspecified namespace
+    [   2921]   WARN - #c.i.i.p.PluginManager - intellij.c.testing has accessibility problem which is currently ignored: it is from namespace 'jetbrains' and depends on module 'intellij.cidr.util.serializer' which is registered in 'com.intellij.cidr.base' plugin with internal visibility in unspecified namespace
+    [   2921]   WARN - #c.i.i.p.PluginManager - intellij.cidr.clangd.core has accessibility problem which is currently ignored: it is from namespace 'jetbrains' and depends on module 'intellij.cidr.util' which is registered in 'com.intellij.cidr.base' plugin with internal visibility in unspecified namespace
+    [   2922]   WARN - #c.i.i.p.PluginManager - intellij.cidr.clangd.core has accessibility problem which is currently ignored: it is from namespace 'jetbrains' and depends on module 'intellij.cidr.util.serializer' which is registered in 'com.intellij.cidr.base' plugin with internal visibility in unspecified namespace
+    [   2922]   WARN - #c.i.i.p.PluginManager - intellij.cidr.clangd.legacyBridge has accessibility problem which is currently ignored: it is from namespace 'jetbrains' and depends on module 'intellij.cidr.util' which is registered in 'com.intellij.cidr.base' plugin with internal visibility in unspecified namespace
+    [   2922]   WARN - #c.i.i.p.PluginManager - intellij.cidr.clangFormat.common has accessibility problem which is currently ignored: it has no namespace specified and depends on module 'intellij.cidr.clangd.core' which is registered in 'com.intellij.cidr.lang.clangd' plugin with internal visibility in namespace 'jetbrains'
+    [   2922]   WARN - #c.i.i.p.PluginManager - intellij.cidr.clangFormat.common has accessibility problem which is currently ignored: it has no namespace specified and depends on module 'intellij.cidr.util' which is registered in 'com.intellij.cidr.base' plugin with internal visibility in unspecified namespace
+    [   2922]   WARN - #c.i.i.p.PluginManager - intellij.cidr.clangFormat.common has accessibility problem which is currently ignored: it has no namespace specified and depends on module 'intellij.platform.core.impl' which is registered in 'com.intellij' plugin with internal visibility in namespace 'jetbrains'
+    [   2922]   WARN - #c.i.i.p.PluginManager - intellij.cidr.clangd.clangFormat has accessibility problem which is currently ignored: it is from namespace 'jetbrains' and depends on module 'intellij.cidr.clangFormat.common' which is registered in 'com.intellij.cidr.base' plugin with internal visibility in unspecified namespace
+    [   2923]   WARN - #c.i.i.p.PluginManager - intellij.cidr.clangFormat.schema has accessibility problem which is currently ignored: it has no namespace specified and depends on module 'intellij.cidr.clangFormat.common' which is registered in 'com.intellij.cidr.base' plugin with internal visibility in unspecified namespace
+    [   2923]   WARN - #c.i.i.p.PluginManager - org.jetbrains.android has accessibility problem which is currently ignored: it has no namespace specified and depends on module 'intellij.libraries.grpc.netty.shaded' which is registered in 'com.intellij' plugin with internal visibility in namespace 'jetbrains'
+    [   2923]   WARN - #c.i.i.p.PluginManager - org.jetbrains.android has accessibility problem which is currently ignored: it has no namespace specified and depends on module 'intellij.settingsSync.core' which is registered in 'com.intellij' plugin with internal visibility in namespace 'jetbrains'
+    [   2924]   WARN - #c.i.i.p.PluginManager - org.jetbrains.android has accessibility problem which is currently ignored: it depends on module 'intellij.java.debugger.impl.backend' which private visibility in 'com.intellij.java' plugin
+    [   2924]   WARN - #c.i.i.p.PluginManager - org.jetbrains.android has accessibility problem which is currently ignored: it has no namespace specified and depends on module 'intellij.platform.debugger.impl.frontend' which is registered in 'com.intellij' plugin with internal visibility in namespace 'jetbrains'
+    [   2924]   WARN - #c.i.i.p.PluginManager - org.jetbrains.android has accessibility problem which is currently ignored: it depends on module 'intellij.platform.diagnostic.freezes' which private visibility in 'com.intellij' plugin
+    [   2924]   WARN - #c.i.i.p.PluginManager - org.jetbrains.android has accessibility problem which is currently ignored: it has no namespace specified and depends on module 'intellij.platform.diagnostic.freezeAnalyzer' which is registered in 'com.intellij' plugin with internal visibility in namespace 'jetbrains'
+    [   2924]   WARN - #c.i.i.p.PluginManager - org.jetbrains.android has accessibility problem which is currently ignored: it depends on module 'intellij.java.debugger.impl.frontend' which private visibility in 'com.intellij.java' plugin
+    [   2924]   WARN - #c.i.i.p.PluginManager - org.jetbrains.android has accessibility problem which is currently ignored: it depends on module 'intellij.platform.images.xdebugger' which private visibility in 'com.intellij.platform.images' plugin
+    [   2924]   WARN - #c.i.i.p.PluginManager - org.jetbrains.android has accessibility problem which is currently ignored: it has no namespace specified and depends on module 'intellij.platform.debugger.impl.backend' which is registered in 'com.intellij' plugin with internal visibility in namespace 'jetbrains'
+    [   2925]   WARN - #c.i.i.p.PluginManager - com.android.tools.ndk has accessibility problem which is currently ignored: it has no namespace specified and depends on module 'intellij.c.debugger' which is registered in 'com.intellij.cidr.lang' plugin with internal visibility in namespace 'jetbrains'
+    [   2925]   WARN - #c.i.i.p.PluginManager - com.android.tools.ndk has accessibility problem which is currently ignored: it has no namespace specified and depends on module 'intellij.cidr.clangd.core' which is registered in 'com.intellij.cidr.lang.clangd' plugin with internal visibility in namespace 'jetbrains'
+    [   2925]   WARN - #c.i.i.p.PluginManager - com.google.services.firebase has accessibility problem which is currently ignored: it has no namespace specified and depends on module 'intellij.libraries.grpc.netty.shaded' which is registered in 'com.intellij' plugin with internal visibility in namespace 'jetbrains'
+    [   2925]   WARN - #c.i.i.p.PluginManager - com.google.gct.directaccess has accessibility problem which is currently ignored: it has no namespace specified and depends on module 'intellij.libraries.grpc.netty.shaded' which is registered in 'com.intellij' plugin with internal visibility in namespace 'jetbrains'
+    [   2925]   WARN - #c.i.i.p.PluginManager - androidx.compose.plugins.idea has accessibility problem which is currently ignored: it depends on module 'intellij.compose.ide.plugin.gradleTooling.rt' which private visibility in 'com.intellij.compose' plugin
+    [   2925]   WARN - #c.i.i.p.PluginManager - androidx.compose.plugins.idea has accessibility problem which is currently ignored: it depends on module 'intellij.compose.ide.plugin.shared' which private visibility in 'com.intellij.compose' plugin
+    [   2925]   WARN - #c.i.i.p.PluginManager - com.google.tools.ij.aiplugin has accessibility problem which is currently ignored: it has no namespace specified and depends on module 'intellij.libraries.grpc.netty.shaded' which is registered in 'com.intellij' plugin with internal visibility in namespace 'jetbrains'
+    [   3023]   WARN - #c.i.p.instanceContainer - InstanceNotOverridableException: Override failed for com.intellij.openapi.project.impl.ProjectStoreFactory: com.intellij.configurationScript.providers.ConfigurationScriptProjectStoreFactory attempts to override com.intellij.configurationStore.PlatformLangProjectStoreFactory, but the existing implementation is not overriddable (not declared as 'open=true')
+    [   3028]   WARN - #c.i.p.instanceContainer - InstanceNotOverridableException: Override failed for com.intellij.openapi.application.IdeUrlTrackingParametersProvider: com.intellij.openapi.application.IdeUrlTrackingParametersProvider attempts to override com.intellij.ide.customization.UtmIdeUrlTrackingParametersProvider, but the existing implementation is not overriddable (not declared as 'open=true')
+    [   4089]   WARN - #c.i.p.instanceContainer - InstanceNotOverridableException: Override failed for com.intellij.openapi.roots.ui.configuration.ProjectSettingsService: com.android.tools.idea.gradle.structure.AndroidProjectSettingsServiceImpl attempts to override com.intellij.openapi.roots.ui.configuration.IdeaProjectSettingsService, but the existing implementation is not overriddable (not declared as 'open=true')
+    [   7929]   WARN - #c.i.p.instanceContainer - InstanceNotOverridableException: Override failed for com.intellij.openapi.roots.ui.configuration.ProjectSettingsService: com.android.tools.idea.gradle.structure.AndroidProjectSettingsServiceImpl attempts to override com.intellij.openapi.roots.ui.configuration.IdeaProjectSettingsService, but the existing implementation is not overriddable (not declared as 'open=true')
+    [   9443]   WARN - com.google.aiplugin.lucene.internal.vectorization.VectorizationProvider - Java vector incubator module is not readable. For optimal vector performance, pass '--add-modules jdk.incubator.vector' to enable Vector API.
+    [  11669]   WARN - #c.i.w.i.i.WorkspaceModelMessageDeliveryListener - Long WSM event processing. Topic=WorkspaceModelChangeListener, offender=class com.intellij.workspaceModel.ide.impl.legacyBridge.module.LegacyProjectModelListenersBridge, message=changed, time=528ms
+    [  17069]   WARN - #com.android.tools.ndk.HotfixForOCInitialTablesBuildingActivity - Overriding OCInitialTablesBuildingActivity with HotfixForOCInitialTablesBuildingActivity
+
+DtdUtilsTest > testWaitersMapIsClearedAfterAsyncCompletion STANDARD_ERROR
+    Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+    WARNING: A Java agent has been loaded dynamically (C:\Users\Rom\AppData\Local\Temp\byteBuddyAgent4680357860964874073.jar)
+    WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+    WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+    WARNING: Dynamic loading of agents will be disallowed by default in a future release
+
+FlutterPositionMapperTest > shouldGetPositionInFileUnderRemoteBaseUri STANDARD_ERROR
+    [  32046]   WARN - #c.i.p.instanceContainer - InstanceNotOverridableException: Override failed for com.intellij.openapi.roots.ui.configuration.ProjectSettingsService: com.android.tools.idea.gradle.structure.AndroidProjectSettingsServiceImpl attempts to override com.intellij.openapi.roots.ui.configuration.IdeaProjectSettingsService, but the existing implementation is not overriddable (not declared as 'open=true')
+    [  32221]   WARN - #com.android.tools.ndk.HotfixForOCInitialTablesBuildingActivity - Overriding OCInitialTablesBuildingActivity with HotfixForOCInitialTablesBuildingActivity
+
+FlutterPositionMapperTest > shouldGetPositionInFileUnderRemoteSourceRoot STANDARD_ERROR
+    [  33254]   WARN - #c.i.p.instanceContainer - InstanceNotOverridableException: Override failed for com.intellij.openapi.roots.ui.configuration.ProjectSettingsService: com.android.tools.idea.gradle.structure.AndroidProjectSettingsServiceImpl attempts to override com.intellij.openapi.roots.ui.configuration.IdeaProjectSettingsService, but the existing implementation is not overriddable (not declared as 'open=true')
+    [  33368]   WARN - #com.android.tools.ndk.HotfixForOCInitialTablesBuildingActivity - Overriding OCInitialTablesBuildingActivity with HotfixForOCInitialTablesBuildingActivity
+
+FlutterModuleUtilsTest > isFlutterModule_null STANDARD_ERROR
+    [  39004]   WARN - #c.i.p.instanceContainer - InstanceNotOverridableException: Override failed for com.intellij.openapi.roots.ui.configuration.ProjectSettingsService: com.android.tools.idea.gradle.structure.AndroidProjectSettingsServiceImpl attempts to override com.intellij.openapi.roots.ui.configuration.IdeaProjectSettingsService, but the existing implementation is not overriddable (not declared as 'open=true')
+    [  39105]   WARN - #com.android.tools.ndk.HotfixForOCInitialTablesBuildingActivity - Overriding OCInitialTablesBuildingActivity with HotfixForOCInitialTablesBuildingActivity
+
+FlutterModuleUtilsTest > getModuleTypeIDForFlutter STANDARD_ERROR
+    [  39259]   WARN - #c.i.p.instanceContainer - InstanceNotOverridableException: Override failed for com.intellij.openapi.roots.ui.configuration.ProjectSettingsService: com.android.tools.idea.gradle.structure.AndroidProjectSettingsServiceImpl attempts to override com.intellij.openapi.roots.ui.configuration.IdeaProjectSettingsService, but the existing implementation is not overriddable (not declared as 'open=true')
+    [  39323]   WARN - #com.android.tools.ndk.HotfixForOCInitialTablesBuildingActivity - Overriding OCInitialTablesBuildingActivity with HotfixForOCInitialTablesBuildingActivity
+
+FlutterModuleUtilsTest > isFlutterModule_emptyModule STANDARD_ERROR
+    [  39491]   WARN - #c.i.p.instanceContainer - InstanceNotOverridableException: Override failed for com.intellij.openapi.roots.ui.configuration.ProjectSettingsService: com.android.tools.idea.gradle.structure.AndroidProjectSettingsServiceImpl attempts to override com.intellij.openapi.roots.ui.configuration.IdeaProjectSettingsService, but the existing implementation is not overriddable (not declared as 'open=true')
+    [  39556]   WARN - #com.android.tools.ndk.HotfixForOCInitialTablesBuildingActivity - Overriding OCInitialTablesBuildingActivity with HotfixForOCInitialTablesBuildingActivity
+
+IconPreviewGeneratorTest > generateWithInvalidPaths STANDARD_ERROR
+    [  42129]   WARN - io.flutter.utils.IconPreviewGenerator - Unable to generate icon
+
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Index dispose started
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids stored. Size: 0. Index: 107 Path: C:\Users\Rom\Documents\assign1-opensource\flutte
+r-intellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\inde
+x\dirty-file-queues\light_temp_3LFqiFROf81gyeCMqwHpQ5iCSkK8ffa9dd2. Ids & filenames: {}
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 13 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTest19a7db91.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 77 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTest20b0dea0.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 45 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTest245f3903.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 2. Index: 91 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTest2874c9ec.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 3. Index: 9 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-in
+tellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\di
+rty-file-queues\io_flutter_run_FlutterPositionMapperTest293ed95a.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 2. Index: 104 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-
+intellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\
+dirty-file-queues\io_flutter_run_FlutterPositionMapperTest29986ff8.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 101 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-
+intellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\
+dirty-file-queues\io_flutter_run_FlutterPositionMapperTest33f79247.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 2. Index: 69 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTest3d885af3.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 2. Index: 6 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-in
+tellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\di
+rty-file-queues\io_flutter_run_FlutterPositionMapperTest412b1ca7.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 42 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTest4194d45d.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 2. Index: 3 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-in
+tellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\di
+rty-file-queues\io_flutter_run_FlutterPositionMapperTest45d0e359.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 97 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTest4948f650.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 65 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTest4c98dea.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 38 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTest505fecd9.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 2. Index: 0 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-in
+tellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\di
+rty-file-queues\io_flutter_run_FlutterPositionMapperTest580149f4.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 2. Index: 49 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTest581479bd.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 49 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTest5f6137ad.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 60 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTest64b72d31.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 3. Index: 60 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTest656586cd.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 107 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-
+intellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\
+dirty-file-queues\io_flutter_run_FlutterPositionMapperTest701dcc38.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 2. Index: 35 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTest75a45485.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 69 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTest76bd2b39.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 3. Index: 27 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTest794dee8b.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 2. Index: 42 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTest7b2a9f91.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 2. Index: 87 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTest7b619590.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 3. Index: 56 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTest7bd3ef8d.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 9 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-in
+tellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\di
+rty-file-queues\io_flutter_run_FlutterPositionMapperTest7e8ab84b.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 3. Index: 20 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTest7eedc9f4.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 2. Index: 45 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTest80e6ae17.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 3. Index: 65 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTest84eb3972.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 27 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTest85ad32db.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 3. Index: 13 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTest8cba6b7d.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 20 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTest9806292d.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 91 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTest9bd9399b.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 17 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTest9e65ca5b.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 56 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTest9f1ce6dd.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 6 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-in
+tellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\di
+rty-file-queues\io_flutter_run_FlutterPositionMapperTesta3190e3f.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 35 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTestb0fdc77.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 24 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTestb2318341.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 2. Index: 77 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTestb67acfa6.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 2. Index: 38 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTestbd3c9190.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 3. Index: 107 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-
+intellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\
+dirty-file-queues\io_flutter_run_FlutterPositionMapperTestc159823f.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 3 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-in
+tellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\di
+rty-file-queues\io_flutter_run_FlutterPositionMapperTestdbe9f607.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 2. Index: 17 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTeste010397a.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 2. Index: 101 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-
+intellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\
+dirty-file-queues\io_flutter_run_FlutterPositionMapperTestee3602b3.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 3. Index: 24 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTestef79fee2.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 87 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTestef9fe939.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 104 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-
+intellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\
+dirty-file-queues\io_flutter_run_FlutterPositionMapperTestf1439e32.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 2. Index: 97 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_run_FlutterPositionMapperTestf22a2041.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 0 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-in
+tellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\di
+rty-file-queues\io_flutter_run_FlutterPositionMapperTestf2ab3a73.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 27 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest1064af93.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 91 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest149f6ab3.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 56 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest16421a.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 77 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest1b3b8ce7.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 35 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest1ce3bbde.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 13 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest1d2dd1b5.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 69 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest1e4e83ef.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 91 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest1e73780c.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 107 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-
+intellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\
+dirty-file-queues\io_flutter_utils_FlutterModuleUtilsTest1ee34464.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 60 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest2307d5d2.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 69 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest241fce21.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 9 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-in
+tellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\di
+rty-file-queues\io_flutter_utils_FlutterModuleUtilsTest2cf69651.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 107 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-
+intellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\
+dirty-file-queues\io_flutter_utils_FlutterModuleUtilsTest333c197f.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 42 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest33725aa1.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 6 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-in
+tellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\di
+rty-file-queues\io_flutter_utils_FlutterModuleUtilsTest33d3d708.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 38 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest353526f6.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 91 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest377e2a31.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 101 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-
+intellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\
+dirty-file-queues\io_flutter_utils_FlutterModuleUtilsTest3d993887.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 77 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest48264ab5.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 3 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-in
+tellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\di
+rty-file-queues\io_flutter_utils_FlutterModuleUtilsTest4a7a850f.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 24 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest50f45086.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 104 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-
+intellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\
+dirty-file-queues\io_flutter_utils_FlutterModuleUtilsTest5490c915.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 101 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-
+intellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\
+dirty-file-queues\io_flutter_utils_FlutterModuleUtilsTest5d247dd6.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 65 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest62c3b532.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 60 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest641e335d.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 27 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest673fedfe.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 17 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest68e622bd.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 3 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-in
+tellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\di
+rty-file-queues\io_flutter_utils_FlutterModuleUtilsTest6ed676ce.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 42 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest73ce5790.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 49 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest7722aa14.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 97 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest78ba20fa.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 13 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest78eab8db.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 6 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-in
+tellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\di
+rty-file-queues\io_flutter_utils_FlutterModuleUtilsTest7b4bc8e0.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 101 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-
+intellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\
+dirty-file-queues\io_flutter_utils_FlutterModuleUtilsTest7dee5b52.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 45 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest88aad716.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 77 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest8ed12670.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 27 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest927c69e6.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 9 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-in
+tellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\di
+rty-file-queues\io_flutter_utils_FlutterModuleUtilsTest92ed22f0.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 9 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-in
+tellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\di
+rty-file-queues\io_flutter_utils_FlutterModuleUtilsTest93831dfa.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 20 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest99986d05.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 45 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest9ae1ee17.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 49 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest9b0032ed.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 87 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTest9dbc3d0d.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 97 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTesta49af1f5.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 0 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-in
+tellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\di
+rty-file-queues\io_flutter_utils_FlutterModuleUtilsTesta87c98ed.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 0 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-in
+tellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\di
+rty-file-queues\io_flutter_utils_FlutterModuleUtilsTestabcd5c30.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 49 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTestb204ecd5.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 69 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTestb63f0b3.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 24 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTestb74da722.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 104 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-
+intellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\
+dirty-file-queues\io_flutter_utils_FlutterModuleUtilsTestb7cadef5.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 20 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTestb9719822.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 24 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTestbbf633a9.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 17 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTestbead6924.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 35 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTestc072882d.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 3 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-in
+tellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\di
+rty-file-queues\io_flutter_utils_FlutterModuleUtilsTestc25e3eca.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 87 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTestc495abf2.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 42 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTestc538c6b4.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 45 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTestc94d8416.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 65 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTestccb07d78.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 38 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTestd24768b5.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 56 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTestd2fac10f.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 38 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTestd9507bd4.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 6 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-in
+tellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\di
+rty-file-queues\io_flutter_utils_FlutterModuleUtilsTestdd492b9b.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 60 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTestddf7147f.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 35 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTestde908de5.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 97 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTestdff940a7.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 56 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTeste03baa59.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 17 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTeste190b745.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 13 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTestebcb0994.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 20 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTestee1d30a5.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 87 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTestef2e0e03.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 104 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-
+intellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\
+dirty-file-queues\io_flutter_utils_FlutterModuleUtilsTestf34ffd0d.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 107 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-
+intellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\
+dirty-file-queues\io_flutter_utils_FlutterModuleUtilsTestf57c67f6.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 0 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-in
+tellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\di
+rty-file-queues\io_flutter_utils_FlutterModuleUtilsTestf88ae4c1.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 65 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\io_flutter_utils_FlutterModuleUtilsTestfa450946.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 0 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-in
+tellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\di
+rty-file-queues\light_temp_3Kk4XRjS8BezCssvRw1WDNyvkaZd54798cc.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 3 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-in
+tellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\di
+rty-file-queues\light_temp_3KkJBBlSbpw9lA2ZxRpGGKUI7VHa9122518.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 3 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-in
+tellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\di
+rty-file-queues\light_temp_3KkJjblmQE6DlHhis3Yu1dThBaq12848f90.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 6 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-in
+tellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\di
+rty-file-queues\light_temp_3KkKvoPfaiK8VDPMEJl2jT9xq1k816b526b.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 6 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-in
+tellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\di
+rty-file-queues\light_temp_3KsbNTSIqsr9kv4uOCbCYeFXCUPe6fd2329.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 6 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-in
+tellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\di
+rty-file-queues\light_temp_3KscHkJVB0JSx5iSjTPu8BCCIWI4ca07d.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 9 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-in
+tellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\di
+rty-file-queues\light_temp_3KsdErY0X2yRgFk0BhqfoIHsXwCef363370.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 13 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3KsiKpqSkBJTofzgHjbQ97Kx2JZe0e6b96b.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 13 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3KslryHXAPgsvTOmlfjg3VLXfsH344c80a6.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 17 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3Kz29kGeGS9dYpexVxXcjJzQumr5bc1c4ca.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 17 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3Kz4ujRGzjammtOhHEpn9KNi4fl927a650.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 20 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3L47Wz6TRPwVCghdirvCjY30GB0682d1dbd.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 45 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3L4a3sXLQaSclYIh7i3v3dq0cnCc4299cfd.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 48 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3L4aIeug6XzkHek8flpRXpJ0VG3c977531b.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 49 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3L4akWvC1lAsr7wGuFC860UrlnW707bb947.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 55 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3L4auWvG4TprGEO6A85z2CMT0dOc51f21f7.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 20 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3L4BbKJdAfVwJ1qgByPbvwCJS6M71814ba1.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 24 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3L4EK1H37C3PSCKOU8GScIqHtkg6fc4c882.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 27 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3L4H6C0Bqba7a49O2Od5RprdnyN7765415a.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 30 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3L4HUFTfPWHrhOsxMk6AMg4FXIfc035a863.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 31 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3L4IH0wBgUKTu297nIHhZYIk2gsc20dbf3f.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 32 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3L4JdccqZqDX99XqxXU5EodSUFa8d5580e7.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 33 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3L4KHiuncm3FH4wJZxHx7qENLXE3faaf252.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 34 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3L4LI7MkVzO5JU9CUgksUEhYSlJ3a644c0a.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 35 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3L4ScDLQwdpq8fa79b9BiqfV1zI2ba410b6.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 38 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3L4SyOnZVjSY9Efe0dvzo5TetP7494d261a.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 42 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3L4YNlp5VrAsD8zGMfkiQPq8gEVdfcb88fb.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 56 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3L6nAfm4owxSnUIubkyUthM6k3Sb826d886.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 60 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3L6t0J3wXIHEu2ygc7cNwGtjQndc33b5684.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 64 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3L6tH5RqoJxeKCzQTIahS5l1hcz2cd959d2.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 65 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3L6u2C0Fivp3WE5aVtbR1YflQXzd0cd5dde.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 68 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3L6uD0KMwfsu4kY8UqOp4vTCoeA2a0de600.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 69 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3L718Ahq53Hu7remZcAnB88TBiN1f0de81c.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 76 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3L71JOr7lNVNtKjMnAPvUD56vSIb73122c2.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 77 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3L96gKe2CWYYGP7XpU9bzcPdT7555979712.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 83 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3L97BQqASPKAILz6rs7quxEnHMT7d247f30.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 84 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3L98Fssh4ZwSmEwIId7ULV7YylKb50c5d.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 85 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3L9ChKkVe2PdPLoOgFluwgB9NO53f7d8f27.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 86 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3L9Dcy7RRpA63TdaF9NVcuosgfB470be9dc.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 96 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3LFab6PE3cNFymmN3pn3xGuBBBS890b4bcb.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 97 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3LFjiitLexS6yXOajVjPKmMnxIZ4981f6fd.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 100 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-
+intellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\
+dirty-file-queues\light_temp_3LFm6RYoB3EibAgtURR26ZKXdpPdf2659b3.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 101 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-
+intellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\
+dirty-file-queues\light_temp_3LFnDGU5ox9b7Zh9vowOS0IjzRBda3e06c1.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 104 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-
+intellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\
+dirty-file-queues\light_temp_3LFoTxnQUyMSpvfq3RcsU5t9gHyedb930d0.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 107 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-
+intellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\
+dirty-file-queues\light_temp_3LFqiFROf81gyeCMqwHpQ5iCSkK8ffa9dd2.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 87 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3LFXbBpRdgjTiLSao70XwkloDJO951bb287.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 90 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3LFYiU3ziWv6q36KsxLFuCxcgambd781567.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 91 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3LFZOYAaRWOeQm3UdB7efJCux9B6669e6df.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids read. Size: 0. Index: 95 Path: C:\Users\Rom\Documents\assign1-opensource\flutter-i
+ntellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\d
+irty-file-queues\light_temp_3LFZuBEnGwV8cbwyadGUzHNnYn997888d9f.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Dirty file ids stored. Size: 111. Index: 111 Path: C:\Users\Rom\Documents\assign1-opensource\flut
+ter-intellij\.intellijPlatform\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\in
+dex\dirty-file-ids. Ids & filenames: 
+{311=C:/Users/Rom/AppData/Local/Temp/unitTest4660735620398093833/root/lib/main.dart, 
+310=C:/Users/Rom/AppData/Local/Temp/unitTest4660735620398093833/root/lib, 
+312=C:/Users/Rom/AppData/Local/Temp/unitTest4660735620398093833/root/lib/hello.dart, 
+620=C:/Users/Rom/AppData/Local/Temp/unitTest147954466522
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: StubIndexExtension-s were unloaded
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Start shutting down C:\Users\Rom\Documents\assign1-opensource\flutter-intellij\.intellijPlatform\
+sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\rep.names
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Finished shutting down C:\Users\Rom\Documents\assign1-opensource\flutter-intellij\.intellijPlatfo
+rm\sandbox\flutter-intellij\AI-AI-261.25134.95.2612.15653154\system-test\index\rep.names
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: Index dispose completed in 263ms.
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: VFS dispose started
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: VFS closing
+Oct 26, 2026 9:18:43 P.M. com.intellij.openapi.diagnostic.AsyncLogKt logNow
+INFO: VFS dispose completed in 3 ms.
+
+[Incubating] Problems report is available at: file:///C:/Users/Rom/Documents/assign1-opensource/flutter-intellij/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.8.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 14m 36s
+19 actionable tasks: 19 executed
